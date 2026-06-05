@@ -1,0 +1,86 @@
+[
+  {
+    "id": "N1_IncompleteHallClaim",
+    "title": "Incomplete Hall claim missing sufficiency direction",
+    "role": "negative_control",
+    "expected": "INCOMPLETE_LEDGER",
+    "domain_summary": "finite families of finite sets",
+    "theorem_shape": "HallCondition(A) iff SDR(A), with only necessity supplied",
+    "objects": {
+      "exact_statement": "present",
+      "domain": "present",
+      "hypothesis": "present",
+      "construction": "present",
+      "obstruction": "present",
+      "necessity_direction": "present",
+      "sufficiency_direction": "missing",
+      "boundary": "present",
+      "proof_ledger": "missing",
+      "dependency_ledger": "present",
+      "claim_boundary_ledger": "present"
+    },
+    "flags": {
+      "open_hypothesis": false,
+      "missing_proof_object": true,
+      "claimed_domain_exceeds_proven_domain": false,
+      "benchmark_match_only": false,
+      "trusted_verifier_status": "incomplete"
+    }
+  },
+  {
+    "id": "N2_ConditionalBanachClaim",
+    "title": "Conditional Banach fixed-point claim with open completeness hypothesis",
+    "role": "negative_control",
+    "expected": "COMPLETE_CONDITIONAL_LEDGER",
+    "domain_summary": "metric-space fixed-point claim",
+    "theorem_shape": "contraction has unique fixed point, but completeness remains open",
+    "objects": {
+      "exact_statement": "present",
+      "domain": "present",
+      "hypothesis": "present",
+      "construction": "present",
+      "obstruction": "present",
+      "necessity_direction": "present",
+      "sufficiency_direction": "present",
+      "boundary": "present",
+      "proof_ledger": "present",
+      "dependency_ledger": "present",
+      "claim_boundary_ledger": "present"
+    },
+    "flags": {
+      "open_hypothesis": true,
+      "missing_proof_object": false,
+      "claimed_domain_exceeds_proven_domain": false,
+      "benchmark_match_only": false,
+      "trusted_verifier_status": "conditional_verified"
+    }
+  },
+  {
+    "id": "N3_OverclaimedFiniteToInfiniteHallClaim",
+    "title": "Overclaimed finite-to-infinite Hall claim",
+    "role": "negative_control",
+    "expected": "OVERCLAIMED_LEDGER",
+    "domain_summary": "finite Hall theorem claimed over arbitrary infinite families",
+    "theorem_shape": "proven finite result is claimed as arbitrary infinite result",
+    "objects": {
+      "exact_statement": "present",
+      "domain": "present",
+      "hypothesis": "present",
+      "construction": "present",
+      "obstruction": "present",
+      "necessity_direction": "present",
+      "sufficiency_direction": "present",
+      "boundary": "present",
+      "proof_ledger": "present",
+      "dependency_ledger": "present",
+      "claim_boundary_ledger": "present"
+    },
+    "flags": {
+      "open_hypothesis": false,
+      "missing_proof_object": false,
+      "claimed_domain_exceeds_proven_domain": true,
+      "benchmark_match_only": false,
+      "trusted_verifier_status": "verified"
+    }
+  }
+]

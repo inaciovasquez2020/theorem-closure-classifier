@@ -1,0 +1,57 @@
+{
+  "suite": "SevenBenchmarkControls_V1",
+  "total_controls": 7,
+  "passed": 7,
+  "failed": 0,
+  "outputs": [
+    {
+      "id": "B1_HallSDR",
+      "expected": "COMPLETE_UNCONDITIONAL_LEDGER",
+      "observed": "COMPLETE_UNCONDITIONAL_LEDGER",
+      "minimal_missing_object": null,
+      "result": "PASS"
+    },
+    {
+      "id": "B2_KonigMatchingVertexCover",
+      "expected": "COMPLETE_UNCONDITIONAL_LEDGER",
+      "observed": "COMPLETE_UNCONDITIONAL_LEDGER",
+      "minimal_missing_object": null,
+      "result": "PASS"
+    },
+    {
+      "id": "B3_MaxFlowMinCut",
+      "expected": "COMPLETE_UNCONDITIONAL_LEDGER",
+      "observed": "COMPLETE_UNCONDITIONAL_LEDGER",
+      "minimal_missing_object": null,
+      "result": "PASS"
+    },
+    {
+      "id": "B4_MengerPathSeparator",
+      "expected": "COMPLETE_UNCONDITIONAL_LEDGER",
+      "observed": "COMPLETE_UNCONDITIONAL_LEDGER",
+      "minimal_missing_object": null,
+      "result": "PASS"
+    },
+    {
+      "id": "N1_IncompleteHallClaim",
+      "expected": "INCOMPLETE_LEDGER",
+      "observed": "INCOMPLETE_LEDGER",
+      "minimal_missing_object": "sufficiency_direction",
+      "result": "PASS"
+    },
+    {
+      "id": "N2_ConditionalBanachClaim",
+      "expected": "COMPLETE_CONDITIONAL_LEDGER",
+      "observed": "COMPLETE_CONDITIONAL_LEDGER",
+      "minimal_missing_object": "OpenHypothesisObject",
+      "result": "PASS"
+    },
+    {
+      "id": "N3_OverclaimedFiniteToInfiniteHallClaim",
+      "expected": "OVERCLAIMED_LEDGER",
+      "observed": "OVERCLAIMED_LEDGER",
+      "minimal_missing_object": "ClaimedDomainExceedsProvenDomain",
+      "result": "PASS"
+    }
+  ]
+}

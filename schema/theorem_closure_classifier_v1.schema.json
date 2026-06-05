@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/theorem_closure_classifier_v1.schema.json",
+  "title": "TheoremClosureClassifier_V1",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "expected",
+    "objects",
+    "flags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "role": {
+      "type": "string",
+      "enum": [
+        "positive_control",
+        "negative_control",
+        "candidate_claim"
+      ]
+    },
+    "expected": {
+      "type": "string",
+      "enum": [
+        "COMPLETE_UNCONDITIONAL_LEDGER",
+        "COMPLETE_CONDITIONAL_LEDGER",
+        "INCOMPLETE_LEDGER",
+        "OVERCLAIMED_LEDGER",
+        "BENCHMARK_MATCH_ONLY"
+      ]
+    },
+    "domain_summary": {
+      "type": "string"
+    },
+    "theorem_shape": {
+      "type": "string"
+    },
+    "objects": {
+      "type": "object",
+      "required": [
+        "exact_statement",
+        "domain",
+        "hypothesis",
+        "construction",
+        "obstruction",
+        "necessity_direction",
+        "sufficiency_direction",
+        "boundary",
+        "proof_ledger",
+        "dependency_ledger",
+        "claim_boundary_ledger"
+      ],
+      "properties": {
+        "exact_statement": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "domain": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "hypothesis": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "construction": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "obstruction": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "necessity_direction": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "sufficiency_direction": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "boundary": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "proof_ledger": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "dependency_ledger": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        },
+        "claim_boundary_ledger": {
+          "type": "string",
+          "enum": [
+            "present",
+            "missing"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "flags": {
+      "type": "object",
+      "required": [
+        "open_hypothesis",
+        "missing_proof_object",
+        "claimed_domain_exceeds_proven_domain",
+        "benchmark_match_only",
+        "trusted_verifier_status"
+      ],
+      "properties": {
+        "open_hypothesis": {
+          "type": "boolean"
+        },
+        "missing_proof_object": {
+          "type": "boolean"
+        },
+        "claimed_domain_exceeds_proven_domain": {
+          "type": "boolean"
+        },
+        "benchmark_match_only": {
+          "type": "boolean"
+        },
+        "trusted_verifier_status": {
+          "type": "string",
+          "enum": [
+            "verified",
+            "conditional_verified",
+            "incomplete",
+            "rejected",
+            "unavailable"
+          ]
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": true
+}

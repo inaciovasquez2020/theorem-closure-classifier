@@ -1,0 +1,17 @@
+{
+  "title": "Theorem Closure Classifier",
+  "creators": [
+    {
+      "name": "Vasquez, Inacio"
+    }
+  ],
+  "description": "Verification-governed theorem closure classification artifact with seven benchmark controls.",
+  "license": "MIT",
+  "version": "0.1.1",
+  "keywords": [
+    "formal methods",
+    "theorem proving",
+    "proof auditing",
+    "mathematical verification"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "registry_name": "published_benchmark_source_registry_v1",
+  "sources": [
+    {
+      "id": "Hall1935",
+      "theorem": "Hall systems of distinct representatives theorem",
+      "citation": "P. Hall, On Representatives of Subsets, Journal of the London Mathematical Society, 1935.",
+      "role": "benchmark source, not new theorem claim"
+    },
+    {
+      "id": "Konig1931",
+      "theorem": "Kőnig bipartite matching-vertex-cover theorem",
+      "citation": "D. Kőnig, Graphs and matrices, 1931.",
+      "role": "benchmark source, not new theorem claim"
+    },
+    {
+      "id": "FordFulkerson1956",
+      "theorem": "Max-flow min-cut theorem",
+      "citation": "L. R. Ford and D. R. Fulkerson, Maximal Flow Through a Network, Canadian Journal of Mathematics, 1956.",
+      "role": "benchmark source, not new theorem claim"
+    },
+    {
+      "id": "Menger1927",
+      "theorem": "Menger path-separator theorem",
+      "citation": "K. Menger, Zur allgemeinen Kurventheorie, Fundamenta Mathematicae, 1927.",
+      "role": "benchmark source, not new theorem claim"
+    },
+    {
+      "id": "Banach1922",
+      "theorem": "Banach fixed-point theorem",
+      "citation": "S. Banach, Sur les opérations dans les ensembles abstraits et leur application aux équations intégrales, 1922.",
+      "role": "negative conditional-control source family"
+    }
+  ],
+  "boundary": "Sources are used as benchmarks and controls; this artifact does not claim new proofs of these theorems."
+}

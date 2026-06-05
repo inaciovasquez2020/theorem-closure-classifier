@@ -1,0 +1,114 @@
+[
+  {
+    "id": "B1_HallSDR",
+    "title": "Hall systems of distinct representatives theorem",
+    "role": "positive_control",
+    "expected": "COMPLETE_UNCONDITIONAL_LEDGER",
+    "domain_summary": "finite families of finite sets",
+    "theorem_shape": "HallCondition(A) iff SDR(A)",
+    "objects": {
+      "exact_statement": "present",
+      "domain": "present",
+      "hypothesis": "present",
+      "construction": "present",
+      "obstruction": "present",
+      "necessity_direction": "present",
+      "sufficiency_direction": "present",
+      "boundary": "present",
+      "proof_ledger": "present",
+      "dependency_ledger": "present",
+      "claim_boundary_ledger": "present"
+    },
+    "flags": {
+      "open_hypothesis": false,
+      "missing_proof_object": false,
+      "claimed_domain_exceeds_proven_domain": false,
+      "benchmark_match_only": false,
+      "trusted_verifier_status": "verified"
+    }
+  },
+  {
+    "id": "B2_KonigMatchingVertexCover",
+    "title": "Kőnig bipartite matching-vertex-cover theorem",
+    "role": "positive_control",
+    "expected": "COMPLETE_UNCONDITIONAL_LEDGER",
+    "domain_summary": "finite bipartite graphs",
+    "theorem_shape": "maximum matching size equals minimum vertex-cover size",
+    "objects": {
+      "exact_statement": "present",
+      "domain": "present",
+      "hypothesis": "present",
+      "construction": "present",
+      "obstruction": "present",
+      "necessity_direction": "present",
+      "sufficiency_direction": "present",
+      "boundary": "present",
+      "proof_ledger": "present",
+      "dependency_ledger": "present",
+      "claim_boundary_ledger": "present"
+    },
+    "flags": {
+      "open_hypothesis": false,
+      "missing_proof_object": false,
+      "claimed_domain_exceeds_proven_domain": false,
+      "benchmark_match_only": false,
+      "trusted_verifier_status": "verified"
+    }
+  },
+  {
+    "id": "B3_MaxFlowMinCut",
+    "title": "Max-flow min-cut theorem",
+    "role": "positive_control",
+    "expected": "COMPLETE_UNCONDITIONAL_LEDGER",
+    "domain_summary": "finite directed capacitated networks",
+    "theorem_shape": "maximum feasible flow value equals minimum cut capacity",
+    "objects": {
+      "exact_statement": "present",
+      "domain": "present",
+      "hypothesis": "present",
+      "construction": "present",
+      "obstruction": "present",
+      "necessity_direction": "present",
+      "sufficiency_direction": "present",
+      "boundary": "present",
+      "proof_ledger": "present",
+      "dependency_ledger": "present",
+      "claim_boundary_ledger": "present"
+    },
+    "flags": {
+      "open_hypothesis": false,
+      "missing_proof_object": false,
+      "claimed_domain_exceeds_proven_domain": false,
+      "benchmark_match_only": false,
+      "trusted_verifier_status": "verified"
+    }
+  },
+  {
+    "id": "B4_MengerPathSeparator",
+    "title": "Menger path-separator theorem",
+    "role": "positive_control",
+    "expected": "COMPLETE_UNCONDITIONAL_LEDGER",
+    "domain_summary": "finite graphs with terminals",
+    "theorem_shape": "maximum disjoint path family size equals minimum separator size",
+    "objects": {
+      "exact_statement": "present",
+      "domain": "present",
+      "hypothesis": "present",
+      "construction": "present",
+      "obstruction": "present",
+      "necessity_direction": "present",
+      "sufficiency_direction": "present",
+      "boundary": "present",
+      "proof_ledger": "present",
+      "dependency_ledger": "present",
+      "claim_boundary_ledger": "present"
+    },
+    "flags": {
+      "open_hypothesis": false,
+      "missing_proof_object": false,
+      "claimed_domain_exceeds_proven_domain": false,
+      "benchmark_match_only": false,
+      "trusted_verifier_status": "verified"
+    }
+  }
+]

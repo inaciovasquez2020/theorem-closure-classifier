@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+title: Theorem Closure Classifier
+message: "If you use this artifact, please cite it."
+type: software
+authors:
+  - family-names: Vasquez
+    given-names: Inacio
+version: 0.1.1
+date-released: 2026-06-05
+abstract: "A verification-governed closure-audit classifier for theorem-like mathematical claims."
