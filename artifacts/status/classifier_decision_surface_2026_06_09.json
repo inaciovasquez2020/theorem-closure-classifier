@@ -1,0 +1,62 @@
+{
+  "id": "CLASSIFIER_DECISION_SURFACE_2026_06_09",
+  "repository": "theorem-closure-classifier",
+  "status": "CLASSIFIER_DECISION_SURFACE_ADDED",
+  "closed_object": "ClassifierDecisionSurface",
+  "object_type": "decision_surface_boundary",
+  "purpose": "Record a bounded classifier decision surface over manifest labels while preserving that classifier decisions are labels only and not theorem proofs.",
+  "depends_on": [
+    "ClassificationBoundaryLock",
+    "AdditionalIndependentBenchmarkControl",
+    "FixtureCoverageAudit",
+    "ConcreteFixtureManifest",
+    "ManifestDrivenFixtureTest"
+  ],
+  "decision_surface": [
+    {
+      "input_expected_label": "CLOSED_THEOREM",
+      "classifier_decision": "LABEL_CLOSED_THEOREM",
+      "proof_promotion_status": "NOT_A_PROOF"
+    },
+    {
+      "input_expected_label": "OPEN_FRONTIER",
+      "classifier_decision": "LABEL_OPEN_FRONTIER",
+      "proof_promotion_status": "NOT_A_PROOF"
+    },
+    {
+      "input_expected_label": "BOUNDARY_ONLY",
+      "classifier_decision": "LABEL_BOUNDARY_ONLY",
+      "proof_promotion_status": "NOT_A_PROOF"
+    },
+    {
+      "input_expected_label": "NO_EXTERNAL_ACCEPTANCE",
+      "classifier_decision": "LABEL_NO_EXTERNAL_ACCEPTANCE",
+      "proof_promotion_status": "NOT_A_PROOF"
+    },
+    {
+      "input_expected_label": "CLASSIFIER_OUTPUT_NOT_PROOF",
+      "classifier_decision": "LABEL_CLASSIFIER_OUTPUT_NOT_PROOF",
+      "proof_promotion_status": "NOT_A_PROOF"
+    },
+    {
+      "input_expected_label": "NO_CLAY_CLAIM",
+      "classifier_decision": "LABEL_NO_CLAY_CLAIM",
+      "proof_promotion_status": "NOT_A_PROOF"
+    }
+  ],
+  "required_decision_properties": [
+    "covers_every_manifest_expected_label",
+    "uses_unique_classifier_decisions",
+    "marks_every_decision_not_a_proof",
+    "preserves_boundary_non_claims",
+    "depends_on_manifest_driven_fixture_test"
+  ],
+  "non_claims": [
+    "NO_NEW_THEOREM_PROOF",
+    "NO_EXTERNAL_THEOREM_ACCEPTANCE",
+    "NO_CLASSIFIER_DECISION_AS_PROOF",
+    "NO_AUTOMATIC_THEOREM_PROMOTION",
+    "NO_CLAY_CLAIM"
+  ],
+  "next_admissible_object": "StopOrAddDecisionSurfaceVerifierEntrypoint"
+}
