@@ -1,0 +1,60 @@
+{
+  "id": "CONCRETE_FIXTURE_MANIFEST_2026_06_09",
+  "repository": "theorem-closure-classifier",
+  "status": "CONCRETE_FIXTURE_MANIFEST_ADDED",
+  "closed_object": "ConcreteFixtureManifest",
+  "object_type": "fixture_manifest_boundary",
+  "purpose": "Record concrete fixture identifiers and expected classifier labels without asserting fixture coverage completeness.",
+  "depends_on": [
+    "ClassificationBoundaryLock",
+    "AdditionalIndependentBenchmarkControl",
+    "FixtureCoverageAudit"
+  ],
+  "fixtures": [
+    {
+      "id": "positive_closed_theorem_fixture_001",
+      "category": "positive_closed_theorem_fixture",
+      "expected_label": "CLOSED_THEOREM",
+      "source_status": "manifest_control_only"
+    },
+    {
+      "id": "negative_open_frontier_fixture_001",
+      "category": "negative_open_frontier_fixture",
+      "expected_label": "OPEN_FRONTIER",
+      "source_status": "manifest_control_only"
+    },
+    {
+      "id": "boundary_only_status_fixture_001",
+      "category": "boundary_only_status_fixture",
+      "expected_label": "BOUNDARY_ONLY",
+      "source_status": "manifest_control_only"
+    },
+    {
+      "id": "external_acceptance_absent_fixture_001",
+      "category": "external_acceptance_absent_fixture",
+      "expected_label": "NO_EXTERNAL_ACCEPTANCE",
+      "source_status": "manifest_control_only"
+    },
+    {
+      "id": "classifier_output_not_proof_fixture_001",
+      "category": "classifier_output_not_proof_fixture",
+      "expected_label": "CLASSIFIER_OUTPUT_NOT_PROOF",
+      "source_status": "manifest_control_only"
+    },
+    {
+      "id": "clay_claim_negative_control_fixture_001",
+      "category": "clay_claim_negative_control_fixture",
+      "expected_label": "NO_CLAY_CLAIM",
+      "source_status": "manifest_control_only"
+    }
+  ],
+  "non_claims": [
+    "NO_NEW_THEOREM_PROOF",
+    "NO_EXTERNAL_THEOREM_ACCEPTANCE",
+    "NO_FIXTURE_COVERAGE_COMPLETENESS_CLAIM",
+    "NO_CLASSIFIER_OUTPUT_AS_PROOF",
+    "NO_AUTOMATIC_THEOREM_PROMOTION",
+    "NO_CLAY_CLAIM"
+  ],
+  "next_admissible_object": "StopOrAddManifestDrivenFixtureTest"
+}
