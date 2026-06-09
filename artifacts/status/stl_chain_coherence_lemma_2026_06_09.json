@@ -1,0 +1,45 @@
+{
+  "id": "STL_CHAIN_COHERENCE_LEMMA_2026_06_09",
+  "date": "2026-06-09",
+  "status": "bounded_chain_coherence_theorem",
+  "depends_on": [
+    "STL_CLOSED_BASIC_LIOUVILLE_CORE_2026_06_09",
+    "STL_SUBMODULE_COMPLETENESS_STATUS_2026_06_09"
+  ],
+  "closed_object": "STL_CHAIN_COHERENCE_LEMMA",
+  "statement": "For l <= m <= n, if Delta_lm = 0, Delta_mn = 0, and T_ln = T_mn o T_lm, then Delta_ln = 0.",
+  "hypotheses": [
+    "finite STL poset",
+    "descriptor transports T_lm",
+    "metric defects Delta_lm",
+    "Delta_lm = 0",
+    "Delta_mn = 0",
+    "T_ln = T_mn o T_lm"
+  ],
+  "proved_claims": [
+    "STL metric-defect vanishing composes along comparable chains",
+    "adjacent chain coherence implies composite metric-defect coherence by finite induction",
+    "basic poset-coherence layer of STL is closed"
+  ],
+  "remaining_gaps": [
+    "classification of all closed-basic Liouville transitions",
+    "interaction with ADM constraint surface",
+    "relation to Einstein evolution equations not addressed",
+    "relation to quantization or Hilbert spaces not addressed"
+  ],
+  "stl_completion_after": "80-85%",
+  "next_admissible_object": "STL_CLOSED_BASIC_LIOUVILLE_TRANSITION_CLASSIFICATION_TARGET",
+  "boundary": [
+    "no quantum-gravity claim",
+    "no canonical-quantization claim",
+    "no Einstein-equation claim",
+    "no empirical-gravity claim",
+    "no cosmology claim",
+    "no unification claim",
+    "no physical-theory claim",
+    "no solution-of-gravity claim"
+  ],
+  "documents": [
+    "docs/status/STL_CHAIN_COHERENCE_LEMMA_2026_06_09.md"
+  ]
+}
