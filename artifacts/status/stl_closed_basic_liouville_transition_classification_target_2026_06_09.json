@@ -1,0 +1,47 @@
+{
+  "id": "STL_CLOSED_BASIC_LIOUVILLE_TRANSITION_CLASSIFICATION_TARGET_2026_06_09",
+  "date": "2026-06-09",
+  "status": "bounded_transition_classification_theorem",
+  "depends_on": [
+    "STL_CLOSED_BASIC_LIOUVILLE_CORE_2026_06_09",
+    "STL_SUBMODULE_COMPLETENESS_STATUS_2026_06_09",
+    "STL_CHAIN_COHERENCE_LEMMA_2026_06_09"
+  ],
+  "closed_object": "STL_CLOSED_BASIC_LIOUVILLE_TRANSITION_CLASSIFICATION_TARGET",
+  "statement": "If R is base-projectable over B and R^*lambda - lambda = pi_Q^* beta, then R(q,p) = (B(q), (DB_q^{-1})^*(p + beta_q)); if d beta = 0, then R^*Omega = Omega.",
+  "hypotheses": [
+    "Q := Riem(Sigma)",
+    "Gamma := T^*Q",
+    "lambda canonical Liouville one-form",
+    "Omega := -d lambda",
+    "B : Q -> Q is a diffeomorphism",
+    "R is base-projectable over B",
+    "R^*lambda - lambda = pi_Q^* beta"
+  ],
+  "proved_claims": [
+    "base-projectable basic Liouville transitions are affine cotangent-lift transitions",
+    "closed basic Liouville transitions preserve the symplectic form",
+    "base-projectable closed-basic Liouville transition classification target is closed"
+  ],
+  "excluded_claims": [
+    "does not classify arbitrary non-base-projectable smooth transitions",
+    "does not solve gravity",
+    "does not prove quantum gravity",
+    "does not prove Einstein equations"
+  ],
+  "stl_completion_after": "84-88%",
+  "next_admissible_object": "STL_ADM_CONSTRAINT_SURFACE_INTERACTION_TARGET",
+  "boundary": [
+    "no quantum-gravity claim",
+    "no canonical-quantization claim",
+    "no Einstein-equation claim",
+    "no empirical-gravity claim",
+    "no cosmology claim",
+    "no unification claim",
+    "no physical-theory claim",
+    "no solution-of-gravity claim"
+  ],
+  "documents": [
+    "docs/status/STL_CLOSED_BASIC_LIOUVILLE_TRANSITION_CLASSIFICATION_TARGET_2026_06_09.md"
+  ]
+}
