@@ -1,0 +1,33 @@
+from __future__ import annotations
+
+import json
+from pathlib import Path
+
+from verifier.verify_stl_adm_constraint_surface_interaction_soundness_lemma import verify
+
+ROOT = Path(__file__).resolve().parents[1]
+ARTIFACT = ROOT / "artifacts/status/stl_adm_constraint_surface_interaction_soundness_lemma_2026_06_09.json"
+DOC = ROOT / "docs/status/STL_ADM_CONSTRAINT_SURFACE_INTERACTION_SOUNDNESS_LEMMA_2026_06_09.md"
+
+def test_stl_adm_soundness_lemma_verifies() -> None:
+    verify()
+
+def test_status_is_formal_only() -> None:
+    data = json.loads(ARTIFACT.read_text())
+    assert data["status"] == "STL_ADM_CONSTRAINT_SURFACE_INTERACTION_SOUNDNESS_LEMMA_FORMAL_ONLY"
+    assert data["minimal_missing_object"] == "STL_ADM_CONSTRAINT_SURFACE_INTERACTION_COMPLETION_LOCK"
+
+def test_boundary_preserves_no_physical_soundness_claim() -> None:
+    data = json.loads(ARTIFACT.read_text())
+    boundary = set(data["boundary"])
+    assert "FORMAL_SOUNDNESS_ONLY" in boundary
+    assert "MODEL_RELATIVE_ONLY" in boundary
+    assert "NO_PHYSICAL_SOUNDNESS_CLAIM" in boundary
+    assert "NO_SOLUTION_OF_GRAVITY_CLAIM" in boundary
+
+def test_no_completion_percentage_fields() -> None:
+    data = json.loads(ARTIFACT.read_text())
+    assert "stl_completion_before" not in data
+    assert "stl_completion_after" not in data
+    assert "%" not in ARTIFACT.read_text()
+    assert "%" not in DOC.read_text()
