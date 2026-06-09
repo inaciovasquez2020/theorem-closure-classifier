@@ -1,0 +1,28 @@
+{
+  "id": "ADDITIONAL_INDEPENDENT_BENCHMARK_CONTROL_2026_06_09",
+  "repository": "theorem-closure-classifier",
+  "status": "INDEPENDENT_BENCHMARK_CONTROL_ADDED",
+  "closed_object": "AdditionalIndependentBenchmarkControl",
+  "object_type": "benchmark_control_boundary",
+  "purpose": "Require classifier benchmark controls to remain separate from theorem-proof promotion.",
+  "required_controls": [
+    "independent_fixture_source",
+    "frozen_expected_labels",
+    "non_self_scored_result",
+    "negative_control_case",
+    "positive_control_case",
+    "boundary_non_claims",
+    "provenance_record"
+  ],
+  "non_claims": [
+    "NO_NEW_THEOREM_PROOF",
+    "NO_EXTERNAL_THEOREM_ACCEPTANCE",
+    "NO_CLASSIFIER_OUTPUT_AS_PROOF",
+    "NO_AUTOMATIC_THEOREM_PROMOTION",
+    "NO_CLAY_CLAIM"
+  ],
+  "depends_on": [
+    "ClassificationBoundaryLock"
+  ],
+  "next_admissible_object": "StopOrAddFixtureCoverageAudit"
+}
