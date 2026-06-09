@@ -59,3 +59,27 @@ Expected:
 This repository does not claim new proofs of Hall, Kőnig, max-flow min-cut, Menger, or Banach fixed-point theorems.
 
 The contribution is the closure-classification method and control-suite audit structure.
+
+## Using the Classifier Decision Surface in a Bounded Project
+
+`ClassifierDecisionSurface` is a bounded theorem-status artifact. It records a fixed decision surface inside this repository.
+
+A downstream project may adopt the pattern by using:
+
+| File | Purpose |
+|---|---|
+| `docs/status/CLASSIFIER_DECISION_SURFACE_2026_06_09.md` | Human-readable status record |
+| `artifacts/status/classifier_decision_surface_2026_06_09.json` | Machine-readable artifact |
+| `verifier/verify_classifier_decision_surface.py` | Local artifact verifier |
+| `tests/test_classifier_decision_surface.py` | Regression guard |
+
+Filenames are date-stamped to the closure date; do not update them in place. Create a new artifact instead.
+
+Minimal verification command:
+
+```bash
+python3 verifier/verify_classifier_decision_surface.py
+python3 -m pytest -q tests/test_classifier_decision_surface.py
+```
+
+Boundary: this artifact does not prove unrestricted theorem closure, scientific closure, peer review, manuscript acceptance, or external validation. It is only a closed bounded status surface for the definitions and artifacts recorded in this repository.
