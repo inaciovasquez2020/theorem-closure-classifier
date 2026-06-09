@@ -1,0 +1,38 @@
+{
+  "id": "STL_CLOSED_BASIC_LIOUVILLE_CORE_2026_06_09",
+  "date": "2026-06-09",
+  "status": "bounded_classical_formalism",
+  "primitive_admissibility_condition": "closed_basic_liouville_defect",
+  "objects": {
+    "base": "Q := Riem(Sigma)",
+    "phase_space": "Gamma := T^*Q",
+    "projection": "pi_Q : Gamma -> Q",
+    "liouville_form": "lambda",
+    "symplectic_form": "Omega := -d lambda",
+    "action_functional": "A_lambda(z) := int z^* lambda",
+    "action_defect": "a_R(z) := A_lambda(R o z) - A_lambda(z)",
+    "metric_defect": "Delta_lm",
+    "symplectic_defect": "Theta_lm := R_lm^* Omega - Omega"
+  },
+  "proved_claims": [
+    "Riem(Sigma) is convex, path connected, and contractible",
+    "endpoint-local action defect is equivalent to closed basic Liouville defect on Q := Riem(Sigma)",
+    "closed basic Liouville defect implies symplectic preservation",
+    "Delta_lm = 0 iff f_lm^* h_m = h_l",
+    "Delta_lm = 0 plus closed basic Liouville defect implies metric rigidity plus symplectic rigidity"
+  ],
+  "obsolete": [
+    "action-neutrality as primitive STL admissibility condition"
+  ],
+  "boundary": [
+    "no quantization claim",
+    "no Einstein-equation claim",
+    "no empirical-physics claim",
+    "no cosmology claim",
+    "no unification claim",
+    "no quantum-gravity claim"
+  ],
+  "documents": [
+    "docs/status/STL_CLOSED_BASIC_LIOUVILLE_CORE_2026_06_09.md"
+  ]
+}
