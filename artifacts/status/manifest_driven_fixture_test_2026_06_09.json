@@ -1,0 +1,31 @@
+{
+  "id": "MANIFEST_DRIVEN_FIXTURE_TEST_2026_06_09",
+  "repository": "theorem-closure-classifier",
+  "status": "MANIFEST_DRIVEN_FIXTURE_TEST_ADDED",
+  "closed_object": "ManifestDrivenFixtureTest",
+  "object_type": "manifest_driven_test_boundary",
+  "purpose": "Require fixture tests to derive their checked cases from the concrete fixture manifest rather than from an independent hard-coded fixture list.",
+  "depends_on": [
+    "ClassificationBoundaryLock",
+    "AdditionalIndependentBenchmarkControl",
+    "FixtureCoverageAudit",
+    "ConcreteFixtureManifest"
+  ],
+  "required_test_properties": [
+    "loads_concrete_fixture_manifest",
+    "checks_fixture_id_uniqueness",
+    "checks_manifest_categories_against_fixture_audit",
+    "checks_expected_labels_are_nonempty",
+    "checks_source_status_manifest_control_only",
+    "checks_all_manifest_fixtures_observed"
+  ],
+  "non_claims": [
+    "NO_NEW_THEOREM_PROOF",
+    "NO_EXTERNAL_THEOREM_ACCEPTANCE",
+    "NO_FIXTURE_COVERAGE_COMPLETENESS_CLAIM",
+    "NO_CLASSIFIER_OUTPUT_AS_PROOF",
+    "NO_AUTOMATIC_THEOREM_PROMOTION",
+    "NO_CLAY_CLAIM"
+  ],
+  "next_admissible_object": "StopOrAddClassifierDecisionSurface"
+}
