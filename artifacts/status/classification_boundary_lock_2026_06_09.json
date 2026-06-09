@@ -1,0 +1,27 @@
+{
+  "id": "CLASSIFICATION_BOUNDARY_LOCK_2026_06_09",
+  "repository": "theorem-closure-classifier",
+  "status": "BOUNDARY_LOCK_ADDED",
+  "closed_object": "ClassificationBoundaryLock",
+  "object_type": "classification_boundary_lock",
+  "non_claims": [
+    "NO_NEW_THEOREM_PROOF",
+    "NO_EXTERNAL_THEOREM_ACCEPTANCE",
+    "NO_AUTOMATIC_PROMOTION_FROM_CLASSIFICATION_TO_PROOF",
+    "NO_CLAY_CLAIM"
+  ],
+  "required_fields": [
+    "exact_statement_object",
+    "domain_object",
+    "hypothesis_object",
+    "construction_object",
+    "obstruction_object",
+    "necessity_direction_object",
+    "sufficiency_direction_object",
+    "boundary_object",
+    "proof_ledger",
+    "dependency_ledger",
+    "claim_boundary_ledger"
+  ],
+  "next_admissible_object": "AdditionalIndependentBenchmarkControl"
+}
