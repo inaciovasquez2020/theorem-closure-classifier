@@ -1,0 +1,29 @@
+{
+  "id": "FIXTURE_COVERAGE_AUDIT_2026_06_09",
+  "repository": "theorem-closure-classifier",
+  "status": "FIXTURE_COVERAGE_AUDIT_ADDED",
+  "closed_object": "FixtureCoverageAudit",
+  "object_type": "coverage_audit_boundary",
+  "purpose": "Record the minimum fixture categories required before classifier benchmark results may be treated as coverage evidence.",
+  "required_fixture_categories": [
+    "positive_closed_theorem_fixture",
+    "negative_open_frontier_fixture",
+    "boundary_only_status_fixture",
+    "external_acceptance_absent_fixture",
+    "classifier_output_not_proof_fixture",
+    "clay_claim_negative_control_fixture"
+  ],
+  "required_existing_controls": [
+    "ClassificationBoundaryLock",
+    "AdditionalIndependentBenchmarkControl"
+  ],
+  "non_claims": [
+    "NO_NEW_THEOREM_PROOF",
+    "NO_EXTERNAL_THEOREM_ACCEPTANCE",
+    "NO_COVERAGE_COMPLETENESS_CLAIM",
+    "NO_CLASSIFIER_OUTPUT_AS_PROOF",
+    "NO_AUTOMATIC_THEOREM_PROMOTION",
+    "NO_CLAY_CLAIM"
+  ],
+  "next_admissible_object": "StopOrAddConcreteFixtureManifest"
+}
