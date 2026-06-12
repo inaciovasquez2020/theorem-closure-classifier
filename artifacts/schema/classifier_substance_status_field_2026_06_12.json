@@ -1,0 +1,14 @@
+{
+  "schema_object": "CLASSIFIER_SUBSTANCE_STATUS_FIELD",
+  "date": "2026-06-12",
+  "field": "mathematical_substance_status",
+  "allowed_values": [
+    "build_valid_only",
+    "mathematically_substantive"
+  ],
+  "required_witness_field": "mathematical_substance_witness",
+  "field_rule": {
+    "build_valid_only": "The object compiles, verifies, or is repository-valid, but no nontrivial mathematical-substance witness is recorded.",
+    "mathematically_substantive": "The object has a named nontrivial mathematical-substance witness recorded."
+  }
+}

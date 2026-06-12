@@ -1,0 +1,35 @@
+{
+  "ledger": "CROSS_REPOSITORY_DAILY_CLOSURE_LEDGER",
+  "date": "2026-06-12",
+  "required_keys": [
+    "theorem_object",
+    "validation_command",
+    "boundary"
+  ],
+  "entries": [
+    {
+      "repository": "poincare-new-derivation",
+      "theorem_object": "DSQ_CAYLEY_MENGER_POSITIVITY_INPUT_LEMMA",
+      "validation_command": "lake build Regge.DSQCayleyMengerPositivityInput && python3 tools/verify_dsq_metric_validity_requires_cayley_menger.py && python3 -m pytest tests/test_dsq_metric_validity_requires_cayley_menger.py",
+      "boundary": "does not prove DSQ_METRIC_VALIDITY_THEOREM"
+    },
+    {
+      "repository": "poincare-new-derivation",
+      "theorem_object": "DSQ_TRIANGLE_EUCLIDEAN_INPUT_SURFACE_BRIDGE",
+      "validation_command": "lake build Regge.DSQTriangleEuclideanInputSurfaceBridge && python3 tools/verify_dsq_triangle_euclidean_input_surface_bridge.py",
+      "boundary": "bridges Euclidean triangle input surface only; no global metric-validity theorem and no Cayley-Menger positivity theorem"
+    },
+    {
+      "repository": "iris-lean",
+      "theorem_object": "iris_std_fux_rel_comp_assoc",
+      "validation_command": "lake build Iris.Std.FUXIrisSpecificDelta && python3 tools/internal/verify_fux_rebuild_surface.py",
+      "boundary": "fork-local and build-valid only; no external mathematical significance certificate and no upstream-independent usefulness witness"
+    },
+    {
+      "repository": "theorem-closure-classifier",
+      "theorem_object": "CLASSIFIER_SUBSTANCE_STATUS_FIELD",
+      "validation_command": "python3 verifier/verify_classifier_substance_status_field.py",
+      "boundary": "schema distinction only; does not certify mathematical substance for any artifact"
+    }
+  ]
+}
