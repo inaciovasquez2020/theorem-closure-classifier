@@ -1,0 +1,41 @@
+{
+  "artifact_id": "IRIS_LEAN_TRP4_LOCAL_REPLAY_CERTIFICATE_2026_06_11",
+  "created_date": "2026-06-11",
+  "status": "LOCAL_REPLAY_CERTIFICATE_RECORDED",
+  "external_source": {
+    "kind": "public_repository",
+    "name": "iris-lean",
+    "owner": "leanprover-community",
+    "url": "https://github.com/leanprover-community/iris-lean",
+    "stable_release": "v4.30.0",
+    "stable_release_commit_short": "6ddf890",
+    "stable_release_commit": "6ddf890e97c4ea058aa962fcd7a951646475e1ba",
+    "lake_project_root": "Iris"
+  },
+  "target_theorem": {
+    "name": "mem_of_agree",
+    "source_file": "Iris/Iris/Algebra/Agree.lean",
+    "declaration_line": "31:theorem mem_of_agree (x : Agree α) : ∃ a, a ∈ x.car := by"
+  },
+  "local_replay": {
+    "machine": "Inacios-MacBook-Air",
+    "repository_path": "/Users/inaciof.vasquez/Desktop/GITHUB/external/iris-lean/Iris",
+    "command": "lake build",
+    "result": "Build completed successfully (220 jobs).",
+    "lean_version": "Lean (version 4.30.0, arm64-apple-darwin24.6.0, commit d024af099ca4bf2c86f649261ebf59565dc8c622, Release)",
+    "lake_version": "Lake version 5.0.0-src+d024af0 (Lean version 4.30.0)"
+  },
+  "surface_scan": {
+    "target_file_zero_active_axiom_opaque_unsafe_admit_sorry": true,
+    "repository_wide_zero_surface": false,
+    "repository_wide_exceptions": [
+      "Iris/Iris/BI/Sbi.lean:579 contains active sorry.",
+      "Iris/Iris/Std/DumpPortingData.lean contains active unsafe meta definition.",
+      "Iris/Iris/ProofMode/SynthInstanceAttr.lean contains active unsafe declarations."
+    ]
+  },
+  "classification": {
+    "result": "Conditional / Local Replay Certificate",
+    "boundary": "Local build replay of the selected upstream Iris-Lean project and theorem file only; no theorem ownership claim; no upstream endorsement; no repository-wide zero-sorry claim; no independent proof reconstruction."
+  }
+}
