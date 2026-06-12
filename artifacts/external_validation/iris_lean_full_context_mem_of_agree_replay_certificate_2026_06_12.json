@@ -1,0 +1,46 @@
+{
+  "certificate_id": "IRIS_LEAN_FULL_CONTEXT_MEM_OF_AGREE_REPLAY_CERTIFICATE_2026_06_12",
+  "date": "2026-06-12",
+  "scope": "external_validation_only",
+  "validated_state": {
+    "external_replay_status": "passed",
+    "external_replay_command": "cd $HOME/Desktop/GITHUB/external/iris-lean/Iris && lake env lean MemOfAgreeReplay.lean",
+    "external_replay_stdout": "",
+    "external_replay_stderr": "",
+    "local_verifier_status": "passed",
+    "targeted_pytest_status": "1 passed",
+    "full_pytest_status": "53 passed"
+  },
+  "upstream_repository": "leanprover-community/iris-lean",
+  "upstream_issue": "https://github.com/leanprover-community/iris-lean/issues/460",
+  "upstream_response_acknowledgement": "https://github.com/leanprover-community/iris-lean/issues/460#issuecomment-4692881121",
+  "upstream_pr_status": {
+    "pr": "https://github.com/leanprover-community/iris-lean/pull/458",
+    "state": "closed_unmerged"
+  },
+  "upstream_pin": {
+    "commit": "6ddf890",
+    "tag": "v4.30.0",
+    "project_root": "$HOME/Desktop/GITHUB/external/iris-lean/Iris",
+    "source_file": "Iris/Algebra/Agree.lean"
+  },
+  "resolved_identifiers": {
+    "agree_type": "Iris.Agree",
+    "source_theorem": "Iris.mem_of_agree",
+    "external_replay_theorem": "TheoremClosureClassifier.External.IrisLean.MemOfAgreeReplay.mem_of_agree_replay"
+  },
+  "claim_boundary": {
+    "does_not_modify_upstream": true,
+    "does_not_claim_theorem_ownership": true,
+    "does_not_claim_upstream_endorsement": true,
+    "does_not_claim_semantic_soundness": true,
+    "does_not_claim_full_project_build": true,
+    "does_not_pursue_further_upstream_audit_script": true
+  },
+  "target": {
+    "name": "mem_of_agree",
+    "kind": "full_context_replay_certificate",
+    "status": "passed"
+  },
+  "first_missing_object": null
+}
