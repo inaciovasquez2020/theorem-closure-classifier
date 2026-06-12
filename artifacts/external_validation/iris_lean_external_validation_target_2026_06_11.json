@@ -1,0 +1,31 @@
+{
+  "artifact_id": "IRIS_LEAN_EXTERNAL_VALIDATION_TARGET_2026_06_11",
+  "created_date": "2026-06-11",
+  "status": "CANDIDATE_RECORDED_NOT_LOCALLY_EXECUTED",
+  "external_source": {
+    "kind": "public_repository",
+    "name": "iris-lean",
+    "owner": "leanprover-community",
+    "url": "https://github.com/leanprover-community/iris-lean",
+    "subject_area": "computer_science",
+    "topic": "higher-order concurrent separation logic framework",
+    "license": "Apache-2.0",
+    "stable_release": "v4.30.0",
+    "stable_release_commit_short": "6ddf890",
+    "stable_release_date": "2026-05-27"
+  },
+  "target_predicate": {
+    "name": "IrisLeanConcurrentSeparationLogicRepositoryTarget",
+    "formal_intent": "Classify whether the selected external repository is a public, active, permission-compatible CS formalization target suitable for external validation without claiming theorem ownership.",
+    "expected_classifier_label": "ExternalValidationCandidate",
+    "non_claims": [
+      "No theorem from iris-lean is claimed as original work.",
+      "No correctness claim is made about Iris-Lean beyond its own upstream repository.",
+      "No proof closure is inferred unless the unchanged classifier/verifier returns it."
+    ]
+  },
+  "result": {
+    "classification": "Conditional / External Validation Candidate",
+    "boundary": "Repository-level external validation target only; not a proof of any external theorem; not an ownership claim; not an endorsement by upstream."
+  }
+}
