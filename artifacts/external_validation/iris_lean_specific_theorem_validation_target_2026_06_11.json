@@ -1,0 +1,33 @@
+{
+  "artifact_id": "IRIS_LEAN_SPECIFIC_THEOREM_VALIDATION_TARGET_2026_06_11",
+  "created_date": "2026-06-11",
+  "status": "SPECIFIC_THEOREM_TARGET_RECORDED_NOT_LOCALLY_REPLAYED",
+  "external_source": {
+    "kind": "public_repository",
+    "name": "iris-lean",
+    "owner": "leanprover-community",
+    "url": "https://github.com/leanprover-community/iris-lean",
+    "stable_release": "v4.30.0"
+  },
+  "target_theorem": {
+    "name": "mem_of_agree",
+    "source_file": "Iris/Iris/Algebra/Agree.lean",
+    "source_line": "31",
+    "declaration": "theorem mem_of_agree (x : Agree \u03b1) : \u2203 a, a \u2208 x.car := by"
+  },
+  "target_predicate": {
+    "name": "IrisLeanSpecificTheoremValidationTarget",
+    "formal_intent": "Classify one concrete upstream Iris-Lean declaration as a bounded external theorem-level validation target without claiming ownership, replay, or proof closure.",
+    "expected_classifier_label": "ExternalValidationCandidate",
+    "non_claims": [
+      "No theorem from iris-lean is claimed as original work.",
+      "No local replay of iris-lean is claimed.",
+      "No proof closure is inferred unless the unchanged classifier/verifier returns it.",
+      "No upstream endorsement is claimed."
+    ]
+  },
+  "result": {
+    "classification": "Conditional / External Specific Theorem Validation Candidate",
+    "boundary": "Specific theorem-level target only; not a local proof replay; not an ownership claim; not an endorsement by upstream."
+  }
+}
