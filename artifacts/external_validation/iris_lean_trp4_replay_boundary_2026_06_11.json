@@ -1,0 +1,50 @@
+{
+  "artifact_id": "IRIS_LEAN_TRP4_REPLAY_BOUNDARY_2026_06_11",
+  "created_date": "2026-06-11",
+  "status": "TRP4_REQUIRED_NOT_PROVIDED",
+  "depends_on": [
+    "IRIS_LEAN_EXTERNAL_VALIDATION_TARGET_2026_06_11",
+    "IRIS_LEAN_SPECIFIC_THEOREM_VALIDATION_TARGET_2026_06_11"
+  ],
+  "external_source": {
+    "kind": "public_repository",
+    "name": "iris-lean",
+    "owner": "leanprover-community",
+    "url": "https://github.com/leanprover-community/iris-lean",
+    "stable_release": "v4.30.0"
+  },
+  "target_theorem": {
+    "name": "mem_of_agree",
+    "source_file": "Iris/Iris/Algebra/Agree.lean",
+    "source_line": "31",
+    "declaration": "theorem mem_of_agree (x : Agree \u03b1) : \u2203 a, a \u2208 x.car := by"
+  },
+  "missing_object": {
+    "name": "TrP4",
+    "formal_role": "Local replay certificate for the selected upstream Iris-Lean declaration at the pinned release.",
+    "weakest_sufficient_payload": [
+      "pinned upstream repository",
+      "pinned release or commit",
+      "exact declaration name",
+      "exact source file and line",
+      "local build or replay command",
+      "captured success output",
+      "non-ownership and non-endorsement boundary"
+    ]
+  },
+  "target_predicate": {
+    "name": "IrisLeanTrP4ReplayBoundary",
+    "formal_intent": "Record that theorem-level closure is blocked exactly at the missing local replay certificate TrP4.",
+    "expected_classifier_label": "ConditionalFrontier",
+    "non_claims": [
+      "No local replay is claimed.",
+      "No Iris-Lean theorem closure is claimed.",
+      "No theorem ownership is claimed.",
+      "No upstream endorsement is claimed."
+    ]
+  },
+  "result": {
+    "classification": "Conditional / TrP4 Replay Boundary",
+    "boundary": "Specific theorem-level validation target exists, but closure requires TrP4."
+  }
+}
