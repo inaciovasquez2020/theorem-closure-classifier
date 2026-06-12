@@ -1,0 +1,43 @@
+{
+  "artifact_id": "IRIS_LEAN_REPOSITORY_ACTIVE_PROOF_DEBT_AUDIT_2026_06_12",
+  "created_date": "2026-06-12",
+  "status": "ACTIVE_PROOF_DEBT_AUDIT_RECORDED",
+  "external_source": {
+    "repository": "leanprover-community/iris-lean",
+    "release": "v4.30.0",
+    "commit_short": "6ddf890",
+    "local_root": "/Users/inaciof.vasquez/Desktop/GITHUB/external/iris-lean/Iris"
+  },
+  "audit": {
+    "method": "block-comment-aware Lean surface scan excluding .lake",
+    "repository_scope": "Iris/",
+    "active_sorry": 0,
+    "active_admit": 0,
+    "active_axiom": 0,
+    "active_opaque": 0,
+    "result": "NO_ACTIVE_SORRY_ADMIT_AXIOM_OPAQUE_SURFACE"
+  },
+  "unsafe": {
+    "classification": "UNSAFE_META_INFRASTRUCTURE_ONLY",
+    "occurrences": [
+      "Iris/Iris/ProofMode/SynthInstanceAttr.lean:283",
+      "Iris/Iris/ProofMode/SynthInstanceAttr.lean:298",
+      "Iris/Iris/ProofMode/SynthInstanceAttr.lean:312",
+      "Iris/Iris/Std/DumpPortingData.lean:81"
+    ],
+    "theorem_relevant_unsafe_count": 0
+  },
+  "target_file": {
+    "path": "Iris/Algebra/Agree.lean",
+    "active_sorry_admit_axiom_opaque": 0,
+    "active_unsafe": 0
+  },
+  "build": {
+    "command": "lake build",
+    "result": "Build completed successfully (218 jobs)."
+  },
+  "classification": {
+    "result": "Conditional / Repository Active Proof Debt Audit",
+    "boundary": "Repository active surface audit only; no theorem ownership claim; no upstream endorsement; unsafe meta infrastructure is not classified as theorem proof debt; no claim about semantic soundness beyond successful build and active token scan."
+  }
+}
