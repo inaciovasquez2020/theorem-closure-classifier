@@ -1,0 +1,30 @@
+{
+  "artifact_id": "IRIS_LEAN_MEM_OF_AGREE_INDEPENDENT_CORE_RECONSTRUCTION_2026_06_12",
+  "created_date": "2026-06-12",
+  "status": "INDEPENDENT_CORE_RECONSTRUCTION_RECORDED",
+  "upstream_target": {
+    "repository": "leanprover-community/iris-lean",
+    "release": "v4.30.0",
+    "commit_short": "6ddf890",
+    "theorem": "mem_of_agree",
+    "source_file": "Iris/Iris/Algebra/Agree.lean",
+    "source_line": 31
+  },
+  "independent_reconstruction": {
+    "local_probe_file": "/Users/inaciof.vasquez/Desktop/GITHUB/external/iris-lean/Iris/AgreeNonemptyCoreIndependentProbe.lean",
+    "local_probe_sha256": "0ce6e88b2c8ea0a79749660c9841a565de73e449e7acdb783e54f974350ced8c",
+    "imports": ["Init"],
+    "core_structure": "AgreeCore",
+    "theorem": "agree_nonempty_core_independent_probe",
+    "command": "lean AgreeNonemptyCoreIndependentProbe.lean",
+    "result": "INDEPENDENT_AGREE_CORE_RECONSTRUCTION_OK"
+  },
+  "surface_scan": {
+    "references_upstream_theorem_name": false,
+    "active_axiom_opaque_unsafe_admit_sorry": false
+  },
+  "classification": {
+    "result": "Conditional / Independent Core Reconstruction",
+    "boundary": "Independent reconstruction of the nonempty-list core shape only; not an Iris-Lean theorem ownership claim; not upstream endorsement; not a full upstream-context proof replacement; not repository-wide zero-sorry closure."
+  }
+}
