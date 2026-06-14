@@ -1,0 +1,33 @@
+{
+  "id": "BOUNDED_CLOSURE_PROOF_PATTERN_REFERENCE_2026_06_13",
+  "repository": "theorem-closure-classifier",
+  "status": "BOUNDED_CLOSURE_PROOF_PATTERN_REFERENCE_ADDED",
+  "closed_object": "BoundedClosureProofPatternReference",
+  "object_type": "classification_pattern_reference",
+  "purpose": "Record the bounded-closure proof pattern as a classifier-reference object while preserving that the pattern is a status discipline and not a theorem proof.",
+  "source_repository": "urf-textbook",
+  "source_commit": "8def1fc",
+  "source_section": "Proof Pattern: Bounded Closure by Classified Formal Artifacts",
+  "status_classes": [
+    "PROVED",
+    "CONDITIONAL",
+    "INPUT_SURFACE",
+    "OPEN"
+  ],
+  "required_pattern_components": [
+    "large_claim",
+    "input_surface",
+    "bounded_theorem_object",
+    "verifier_or_certificate",
+    "status_classification",
+    "explicit_boundary"
+  ],
+  "non_claims": [
+    "NO_NEW_THEOREM_PROOF",
+    "NO_THEOREM_PROMOTION",
+    "NO_GLOBAL_CLOSURE",
+    "NO_EXTERNAL_ACCEPTANCE",
+    "NO_CLAY_CLAIM"
+  ],
+  "next_admissible_object": "StopOrAddPatternAdoptionVerifier"
+}
