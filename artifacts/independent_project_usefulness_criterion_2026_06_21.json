@@ -1,0 +1,32 @@
+{
+  "id": "independent_project_usefulness_criterion",
+  "date": "2026-06-21",
+  "status": "CRITERION_ONLY",
+  "purpose": "Document a bounded criterion for when the classifier proof-pattern reference may be treated as useful outside this repository.",
+  "criterion": {
+    "minimum_independent_projects": 2,
+    "project_independence_requirements": [
+      "separate repository or separately versioned formalization target",
+      "non-identical theorem or artifact closure task",
+      "local verifier or regression test owned by the downstream project",
+      "explicit boundary statement preventing a claim of theorem proof, peer review, or external acceptance"
+    ],
+    "admissible_evidence": [
+      "downstream artifact names the adopted classifier surface",
+      "downstream verifier checks the adopted status boundary",
+      "downstream regression test fails when the adopted artifact is removed or corrupted",
+      "downstream documentation records the weakest remaining gap"
+    ],
+    "inadmissible_evidence": [
+      "repository-local verifier alone",
+      "README mention alone",
+      "unverified narrative adoption claim",
+      "claim of general mathematical completeness"
+    ]
+  },
+  "boundary": [
+    "This artifact defines a criterion only.",
+    "It does not assert that any independent project has satisfied the criterion.",
+    "It does not prove general usefulness, external acceptance, or theorem completeness."
+  ]
+}
