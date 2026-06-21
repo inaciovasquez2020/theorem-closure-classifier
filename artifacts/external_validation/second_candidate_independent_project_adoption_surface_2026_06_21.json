@@ -1,0 +1,29 @@
+{
+  "id": "second_candidate_independent_project_adoption_surface",
+  "date": "2026-06-21",
+  "status": "SECOND_CANDIDATE_EVIDENCE_SURFACE_ONLY",
+  "candidate_project": {
+    "name": "chronos-urf-rr",
+    "repository_role": "separate formalization target",
+    "adopted_classifier_surface": "BOUNDED_CLOSURE_PROOF_PATTERN_REFERENCE",
+    "candidate_use": "bounded closure proof-pattern reference for frontier/status artifacts, verifiers, and regression tests"
+  },
+  "relation_to_existing_candidate": {
+    "first_candidate_project": "CSLIB-FMT",
+    "separate_from_first_candidate": true,
+    "minimum_project_count_target": 2
+  },
+  "evidence_shape": {
+    "names_adopted_surface": true,
+    "requires_downstream_verifier": true,
+    "requires_downstream_regression_test": true,
+    "requires_weakest_gap_boundary": true
+  },
+  "boundary": [
+    "This artifact names a second candidate independent-project adoption surface only.",
+    "It does not assert that the independent-project usefulness criterion is satisfied.",
+    "It does not assert downstream chronos-urf-rr validation has occurred.",
+    "It does not prove external acceptance, theorem completeness, or general mathematical usefulness."
+  ],
+  "weakest_gap": "downstream chronos-urf-rr artifact, verifier, and regression test must explicitly name and validate the adopted classifier surface before this can count as second-project evidence"
+}
