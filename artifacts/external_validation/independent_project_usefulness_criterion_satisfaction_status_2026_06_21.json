@@ -1,0 +1,34 @@
+{
+  "id": "independent_project_usefulness_criterion_satisfaction_status",
+  "date": "2026-06-21",
+  "status": "CRITERION_SATISFIED_BY_TWO_PROJECT_DOWNSTREAM_EVIDENCE",
+  "criterion_artifact": "independent_project_usefulness_criterion_2026_06_21",
+  "checked_aggregation_artifact": "two_project_downstream_evidence_aggregation_2026_06_21",
+  "source_surface": "BOUNDED_CLOSURE_PROOF_PATTERN_REFERENCE",
+  "satisfaction_basis": {
+    "minimum_independent_projects_required": 2,
+    "downstream_projects_recorded": [
+      "CSLIB-FMT",
+      "chronos-urf-rr"
+    ],
+    "distinct_repositories_recorded": [
+      "inaciovasquez2020/cslib-fmt",
+      "inaciovasquez2020/chronos-urf-rr"
+    ],
+    "downstream_commits_recorded": [
+      "43e9fbca848c0d112dbfd643482a2d069701176d",
+      "05a798a1a36d69e22547a86234f52f7c4575c1cf"
+    ],
+    "downstream_artifacts_recorded": true,
+    "downstream_verifiers_recorded": true,
+    "downstream_regression_tests_recorded": true,
+    "weakest_gap_boundary_recorded": true
+  },
+  "boundary": [
+    "This status satisfies only the repository-local independent-project usefulness criterion encoded by independent_project_usefulness_criterion_2026_06_21.",
+    "It relies on the two-project downstream aggregation artifact and does not independently re-run downstream repositories.",
+    "It does not prove external acceptance, peer review, theorem completeness, or general mathematical usefulness.",
+    "It does not convert the bounded closure proof-pattern reference into a mathematical theorem."
+  ],
+  "weakest_gap": "external acceptance or broader usefulness would require independent third-party review or adoption beyond owner-controlled repository evidence"
+}
