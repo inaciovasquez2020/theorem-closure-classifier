@@ -1,0 +1,24 @@
+{
+  "id": "candidate_independent_project_adoption_surface",
+  "date": "2026-06-21",
+  "status": "CANDIDATE_EVIDENCE_SURFACE_ONLY",
+  "candidate_project": {
+    "name": "CSLIB-FMT",
+    "repository_role": "separate formalization target",
+    "adopted_classifier_surface": "BOUNDED_CLOSURE_PROOF_PATTERN_REFERENCE",
+    "candidate_use": "bounded closure proof-pattern reference for status-lock artifacts, verifiers, and regression tests"
+  },
+  "evidence_shape": {
+    "names_adopted_surface": true,
+    "requires_downstream_verifier": true,
+    "requires_downstream_regression_test": true,
+    "requires_weakest_gap_boundary": true
+  },
+  "boundary": [
+    "This artifact names one candidate independent-project adoption surface only.",
+    "It does not assert that the independent-project usefulness criterion is satisfied.",
+    "It does not assert two independent projects.",
+    "It does not prove external acceptance, theorem completeness, or general mathematical usefulness."
+  ],
+  "weakest_gap": "downstream CSLIB-FMT artifact, verifier, and regression test must explicitly name and validate the adopted classifier surface before this can count as evidence"
+}
