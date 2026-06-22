@@ -94,3 +94,10 @@ Boundary: this artifact does not prove unrestricted theorem closure, scientific 
 - Downstream example: `cslib-fmt` distance/factorization surface
 
 Boundary: this is not an unrestricted theorem-closure claim, not a new benchmark theorem proof claim, not a global finite-model-theory closure claim, and not a Clay-level closure claim.
+
+## Public bounded theorem-closure status
+
+`BOUNDED_THEOREM_CLOSURE_PUBLIC_STATUS` summarizes the bounded public claim that the theorem-closure audit pipeline works beginning-to-end, with explicit boundaries against unrestricted theorem closure, new benchmark theorem proofs, global FMT closure, and Clay-level closure.
+
+- Public status: `docs/status/BOUNDED_THEOREM_CLOSURE_PUBLIC_STATUS.md`
+- Certificate: `docs/status/BOUNDED_THEOREM_CLOSURE_PIPELINE_CERTIFICATE.md`
