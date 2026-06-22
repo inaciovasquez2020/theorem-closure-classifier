@@ -80,3 +80,17 @@ python3 -m pytest -q tests/test_classifier_decision_surface.py
 ```
 
 Boundary: this artifact does not prove unrestricted theorem closure, scientific closure, peer review, manuscript acceptance, or external validation. It is only a closed bounded status surface for the definitions and artifacts recorded in this repository.
+
+## Bounded theorem-closure pipeline certificate
+
+`BOUNDED_THEOREM_CLOSURE_PIPELINE_CERTIFICATE` records the bounded claim that the theorem-closure audit pipeline works beginning-to-end.
+
+- Certificate doc: `docs/status/BOUNDED_THEOREM_CLOSURE_PIPELINE_CERTIFICATE.md`
+- Certificate artifact: `artifacts/external_validation/bounded_theorem_closure_pipeline_certificate_2026_06_22.json`
+- Primary object: `TheoremClosureClassifier_V1`
+- Control suite: `7-control suite`
+- Verifier: `python3 verifier/verify_bounded_theorem_closure_pipeline_certificate.py`
+- Test: `python3 -m pytest -q tests/test_bounded_theorem_closure_pipeline_certificate.py`
+- Downstream example: `cslib-fmt` distance/factorization surface
+
+Boundary: this is not an unrestricted theorem-closure claim, not a new benchmark theorem proof claim, not a global finite-model-theory closure claim, and not a Clay-level closure claim.
