@@ -54,6 +54,23 @@ Expected:
 7 / 7 controls pass
 ```
 
+## Classification Boundary Lock
+
+`classification_boundary_lock` is the smallest boundary-lock adoption artifact in this repository. It records one fixed classification-boundary status surface and is intended as a stranger-runnable entry point for checking one bounded verifier/test pair.
+
+Run only:
+
+    python3 verifier/verify_classification_boundary_lock.py
+    python3 -m pytest tests/test_classification_boundary_lock.py -q
+
+Expected:
+
+    CLASSIFICATION_BOUNDARY_LOCK_OK
+    1 passed
+
+Boundary: this artifact does not claim universal theorem closure, peer review, manuscript acceptance, or external validation. It only checks the repository classification-boundary lock.
+
+
 ## Boundary
 
 This repository does not claim new proofs of Hall, Kőnig, max-flow min-cut, Menger, or Banach fixed-point theorems.
