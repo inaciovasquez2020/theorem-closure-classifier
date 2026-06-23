@@ -1,0 +1,20 @@
+name: urf-templates-downstream-use-request
+
+on:
+  pull_request:
+  push:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pytest
+        run: python3 -m pip install pytest
+      - name: Verify URF templates downstream use request
+        run: python3 verifier/verify_urf_templates_downstream_use_request.py
+      - name: Run targeted test
+        run: python3 -m pytest tests/test_urf_templates_downstream_use_request.py -q

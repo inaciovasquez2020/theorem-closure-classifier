@@ -1,0 +1,31 @@
+{
+  "id": "urf_templates_downstream_use_request",
+  "status": "DOWNSTREAM_USE_REQUEST_ONLY",
+  "date": "2026-06-23",
+  "candidate_downstream_project": {
+    "name": "theorem-closure-classifier",
+    "repository": "https://github.com/inaciovasquez2020/theorem-closure-classifier",
+    "candidate_use": "consume the urf-templates five-minute verification path as a bounded external adoption-surface input"
+  },
+  "source_project": {
+    "name": "urf-templates",
+    "repository": "https://github.com/inaciovasquez2020/urf-templates",
+    "confirmed_main_commit": "12ac5fe02b4bcd3f3b698a5ba86f48c8fbc2e9e7",
+    "surface": "non-URF scientific claim demo",
+    "clean_clone_result": "FINAL_CLEAN_CLONE_OK"
+  },
+  "requested_check": [
+    "clone urf-templates at the confirmed main commit",
+    "run the README-linked non-URF scientific claim demo verifier",
+    "run the targeted pytest check",
+    "record whether the downstream project can cite the surface as a bounded input"
+  ],
+  "boundary": [
+    "This artifact records a downstream-use request only.",
+    "It does not claim independent external adoption.",
+    "It does not claim peer review, manuscript acceptance, scientific validation, or new physics.",
+    "It does not claim that theorem-closure-classifier adoption criteria are satisfied.",
+    "Actual external adoption remains unclaimed until an independent user or project uses the workflow."
+  ],
+  "weakest_gap": "No independent user or project has yet used the urf-templates workflow as an external input."
+}
