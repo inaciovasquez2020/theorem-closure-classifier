@@ -1,0 +1,44 @@
+{
+  "id": "two_project_downstream_evidence_aggregation",
+  "date": "2026-06-21",
+  "status": "DOWNSTREAM_EVIDENCE_AGGREGATION_ONLY",
+  "source_surface": "BOUNDED_CLOSURE_PROOF_PATTERN_REFERENCE",
+  "criterion_artifact": "independent_project_usefulness_criterion_2026_06_21",
+  "downstream_evidence": [
+    {
+      "project": "CSLIB-FMT",
+      "repository": "inaciovasquez2020/cslib-fmt",
+      "downstream_commit": "43e9fbca848c0d112dbfd643482a2d069701176d",
+      "artifact": "artifacts/classifier_bounded_closure_reference_downstream_adoption_2026_06_21.json",
+      "verifier": "tools/verify_classifier_bounded_closure_reference_downstream_adoption.py",
+      "targeted_test": "tests/test_classifier_bounded_closure_reference_downstream_adoption.py",
+      "validated_status": "CLASSIFIER_BOUNDED_CLOSURE_REFERENCE_DOWNSTREAM_ADOPTION_OK"
+    },
+    {
+      "project": "chronos-urf-rr",
+      "repository": "inaciovasquez2020/chronos-urf-rr",
+      "downstream_commit": "05a798a1a36d69e22547a86234f52f7c4575c1cf",
+      "artifact": "artifacts/chronos/classifier_bounded_closure_reference_downstream_adoption_2026_06_21.json",
+      "verifier": "tools/verify_classifier_bounded_closure_reference_downstream_adoption.py",
+      "targeted_test": "tests/test_classifier_bounded_closure_reference_downstream_adoption.py",
+      "validated_status": "CLASSIFIER_BOUNDED_CLOSURE_REFERENCE_DOWNSTREAM_ADOPTION_OK"
+    }
+  ],
+  "evidence_shape": {
+    "names_adopted_classifier_surface": true,
+    "records_two_downstream_projects": true,
+    "records_distinct_repositories": true,
+    "records_downstream_commits": true,
+    "records_downstream_artifacts": true,
+    "records_downstream_verifiers": true,
+    "records_downstream_regression_tests": true,
+    "records_weakest_gap_boundary": true
+  },
+  "boundary": [
+    "This artifact aggregates two downstream evidence surfaces only.",
+    "It does not prove external acceptance, theorem completeness, or general mathematical usefulness.",
+    "It does not assert peer review or upstream adoption.",
+    "It does not convert the bounded closure proof-pattern reference into a mathematical theorem."
+  ],
+  "weakest_gap": "upgrade from aggregation-only evidence to a criterion-satisfaction status requires a separate classifier-side status artifact and verifier that checks this aggregation against the independent-project usefulness criterion"
+}
