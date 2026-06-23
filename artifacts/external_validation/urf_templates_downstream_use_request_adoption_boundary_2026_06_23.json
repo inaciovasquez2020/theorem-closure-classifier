@@ -1,0 +1,20 @@
+{
+  "id": "urf_templates_downstream_use_request_adoption_boundary_2026_06_23",
+  "date": "2026-06-23",
+  "repo": "theorem-closure-classifier",
+  "artifact_type": "bounded_adoption_boundary_record",
+  "depends_on": [
+    "urf_templates_downstream_use_request"
+  ],
+  "positive_claim": "The repository records a downstream-use request surface for urf-templates as an adoption-readiness artifact.",
+  "boundary": [
+    "does_not_claim_external_adoption",
+    "does_not_claim_peer_review",
+    "does_not_claim_independent_validation",
+    "does_not_claim_universal_theorem_closure",
+    "does_not_claim_mathematical_frontier_discharge"
+  ],
+  "verifier": "verifier/verify_urf_templates_downstream_use_request_adoption_boundary.py",
+  "targeted_test": "tests/test_urf_templates_downstream_use_request_adoption_boundary.py",
+  "next_bounded_improvement": "Attach a separately verifiable external response or downstream run result if one exists."
+}
