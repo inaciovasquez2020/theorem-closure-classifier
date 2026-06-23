@@ -1,0 +1,26 @@
+{
+  "id": "urf_templates_downstream_adoption_boundary_poset_classification_2026_06_23",
+  "date": "2026-06-23",
+  "repo": "theorem-closure-classifier",
+  "artifact_type": "bounded_poset_artifact_classification",
+  "classifier_poset_dependency": "finite_classifier_boundary_poset_2026_06_23",
+  "classified_artifact": "urf_templates_downstream_use_request_adoption_boundary_2026_06_23",
+  "classification_level": "verifier_backed_boundary",
+  "positive_claim": "The downstream-use adoption-boundary artifact is classified at verifier_backed_boundary in the finite classifier boundary poset.",
+  "classification_evidence": [
+    "classified_artifact_exists",
+    "classified_artifact_has_verifier",
+    "classified_artifact_has_targeted_test",
+    "classified_artifact_disclaims_external_adoption",
+    "classified_artifact_disclaims_independent_validation"
+  ],
+  "boundary": [
+    "does_not_claim_external_validation",
+    "does_not_claim_peer_review",
+    "does_not_claim_universal_theorem_closure",
+    "does_not_change_source_artifact",
+    "poset_level_assignment_only"
+  ],
+  "verifier": "verifier/verify_urf_templates_downstream_adoption_boundary_poset_classification.py",
+  "targeted_test": "tests/test_urf_templates_downstream_adoption_boundary_poset_classification.py"
+}
