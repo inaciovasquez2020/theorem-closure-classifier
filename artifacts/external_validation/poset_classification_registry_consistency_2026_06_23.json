@@ -1,0 +1,31 @@
+{
+  "id": "poset_classification_registry_consistency_2026_06_23",
+  "date": "2026-06-23",
+  "repo": "theorem-closure-classifier",
+  "artifact_type": "bounded_poset_classification_registry_consistency_certificate",
+  "classifier_poset_dependency": "finite_classifier_boundary_poset_2026_06_23",
+  "registered_classifications": [
+    {
+      "artifact_id": "finite_classifier_boundary_poset_2026_06_23",
+      "artifact_path": "artifacts/external_validation/finite_classifier_boundary_poset_2026_06_23.json",
+      "classification_level": "verifier_backed_boundary",
+      "reason": "finite certificate has a verifier and targeted test"
+    },
+    {
+      "artifact_id": "urf_templates_downstream_use_request_adoption_boundary_2026_06_23",
+      "artifact_path": "artifacts/external_validation/urf_templates_downstream_use_request_adoption_boundary_2026_06_23.json",
+      "classification_level": "verifier_backed_boundary",
+      "reason": "bounded adoption-boundary artifact has a verifier, targeted test, and explicit no-external-validation boundary"
+    }
+  ],
+  "positive_claim": "The listed repository artifacts are consistently classified inside the finite classifier boundary poset.",
+  "boundary": [
+    "does_not_claim_external_validation",
+    "does_not_claim_peer_review",
+    "does_not_claim_universal_theorem_closure",
+    "does_not_claim_complete_registry",
+    "finite_registry_consistency_only"
+  ],
+  "verifier": "verifier/verify_poset_classification_registry_consistency.py",
+  "targeted_test": "tests/test_poset_classification_registry_consistency.py"
+}
