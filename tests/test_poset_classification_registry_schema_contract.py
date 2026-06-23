@@ -4,21 +4,13 @@ import sys
 from pathlib import Path
 from typing import Any
 
-import pytest
 
 ROOT = Path(__file__).resolve().parents[1]
 VERIFIER = ROOT / "verifier" / "verify_poset_classification_registry_schema_contract.py"
 REGISTRY = ROOT / "artifacts/external_validation/poset_classification_registry_consistency_2026_06_23.json"
 
 
-@pytest.fixture(autouse=True)
-def registry_file_is_restored() -> None:
-    before = REGISTRY.read_text(encoding="utf-8")
-    try:
-        yield
-    finally:
-        after = REGISTRY.read_text(encoding="utf-8")
-        assert after == before
+from registry_restore import registry_file_is_restored
 
 
 def registry_entries(data: dict[str, Any]) -> list[dict[str, Any]]:
