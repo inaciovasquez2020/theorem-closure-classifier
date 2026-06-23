@@ -1,0 +1,35 @@
+{
+  "id": "finite_classifier_boundary_poset_2026_06_23",
+  "date": "2026-06-23",
+  "repo": "theorem-closure-classifier",
+  "artifact_type": "bounded_finite_mathematical_certificate",
+  "finite_carrier": [
+    "no_claim",
+    "bounded_boundary_record",
+    "verifier_backed_boundary",
+    "externally_validated_use"
+  ],
+  "order_edges": [
+    ["no_claim", "bounded_boundary_record"],
+    ["bounded_boundary_record", "verifier_backed_boundary"],
+    ["verifier_backed_boundary", "externally_validated_use"]
+  ],
+  "verified_properties": [
+    "finite_carrier_nonempty",
+    "strict_edges_on_carrier",
+    "acyclic_reachability",
+    "reflexive_closure_is_partial_order",
+    "least_element_no_claim",
+    "greatest_element_externally_validated_use"
+  ],
+  "positive_claim": "For this finite four-level classifier boundary carrier, the generated reflexive-transitive closure is a partial order with the declared least and greatest elements.",
+  "boundary": [
+    "does_not_classify_all_repositories",
+    "does_not_claim_external_validation_for_any_project",
+    "does_not_claim_universal_theorem_closure",
+    "does_not_discharge_any_mathematical_frontier",
+    "finite_certificate_only"
+  ],
+  "verifier": "verifier/verify_finite_classifier_boundary_poset.py",
+  "targeted_test": "tests/test_finite_classifier_boundary_poset.py"
+}
