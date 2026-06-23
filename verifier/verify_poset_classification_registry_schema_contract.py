@@ -27,7 +27,9 @@ def registry_entry_lists(data: dict[str, Any]) -> list[tuple[str, list[dict[str,
             continue
         if not all(isinstance(entry, dict) for entry in value):
             continue
-        if not all(REQUIRED_ENTRY_KEYS <= set(entry) for entry in value):
+        if not all("artifact_id" in entry for entry in value):
+            continue
+        if not all(("artifact_path" in entry or "classification_level" in entry) for entry in value):
             continue
         candidates.append((key, value))
     return candidates

@@ -51,7 +51,7 @@ def test_poset_classification_registry_schema_contract_rejects_missing_required_
         result = run_verifier()
 
         assert result.returncode != 0
-        assert "BOUNDARY := registry_entry_list_field_not_unique" in result.stderr
+        assert "BOUNDARY := registry_entry_shape_not_exact" in result.stderr
     finally:
         REGISTRY.write_text(original, encoding="utf-8")
 
