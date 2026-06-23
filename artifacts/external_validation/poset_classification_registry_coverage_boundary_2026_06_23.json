@@ -1,0 +1,22 @@
+{
+  "id": "poset_classification_registry_coverage_boundary_2026_06_23",
+  "date": "2026-06-23",
+  "repo": "theorem-closure-classifier",
+  "artifact_type": "bounded_registry_coverage_boundary_certificate",
+  "registry_dependency": "poset_classification_registry_consistency_2026_06_23",
+  "classifier_poset_dependency": "finite_classifier_boundary_poset_2026_06_23",
+  "positive_claim": "The current poset classification registry is explicitly bounded and does not claim complete project-wide coverage.",
+  "coverage_status": "partial_registry_only",
+  "minimum_registered_artifacts_checked": 2,
+  "required_dependency_boundary": "does_not_claim_complete_registry",
+  "boundary": [
+    "does_not_claim_complete_registry",
+    "does_not_claim_all_artifacts_classified",
+    "does_not_claim_external_validation",
+    "does_not_claim_peer_review",
+    "does_not_claim_universal_theorem_closure",
+    "coverage_boundary_only"
+  ],
+  "verifier": "verifier/verify_poset_classification_registry_coverage_boundary.py",
+  "targeted_test": "tests/test_poset_classification_registry_coverage_boundary.py"
+}
